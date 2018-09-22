@@ -1,0 +1,85 @@
+* {
+  transition: all 0.1s ease-in;
+}
+
+body {
+  font: 400 18px/1.4 "Trebuchet MS", sans-serif;
+  color: #fff;
+  background-color: #3b3f45;
+  margin: 0;
+}
+
+.ba-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.ba-list {
+  display: block;
+  list-style-type: none;
+}
+
+.ba-text {
+  display: block;
+  padding: 15px;
+  margin: 0;
+}
+
+li {
+  background: #88839e;
+}
+
+li:nth-child(2n) {
+  background: #625e77;
+}
+
+small::before {
+  content: "( ";
+}
+
+small::after {
+  content: " )";
+}
+
+.ba-logo,
+.ba-logo + h2 {
+  color: #eb7e7f;
+  font-size: 25px;
+  background-color: #4a4f56;
+  margin: 0px;
+  padding: 5px 5px 0px;
+  text-align: center;
+}
+
+[class*="logo"]  {
+  font-size: 35px;
+}
+
+.ba-end {
+  display: block;
+  background: #4a4f56;
+  color: #eb7e7f;
+  padding: 2px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.ba-list li :hover {
+  background: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.ba-list label :hover {
+  border: none;
+}
+
+.ba-list li :active {
+  background: #eb7e7f;
+}
+
+input:checked + span {
+  color: #d3cee7;
+  text-decoration: line-through;
+}
